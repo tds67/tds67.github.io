@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A practical roadmap for improving cybersecurity in the Kurdistan Region, with phased actions and measurable metrics." />
+  <title>What should be done — Cybersecurity in the Kurdistan Region</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="roadmap">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+  <div class="container">
+    <div class="topbar">
+      <a class="brand" href="index.html">
+        <div class="logo" aria-hidden="true">CK</div>
+        <div>
+          <strong>Cybersecurity in the Kurdistan Region</strong>
+          <small>Advancements, current gaps, and a practical roadmap</small>
+        </div>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <div class="navlinks">
+          <a href="index.html" data-nav="home">Home</a>
+<a href="advancements.html" data-nav="advancements">Advancements</a>
+<a href="weaknesses.html" data-nav="weaknesses">Current weaknesses</a>
+<a href="roadmap.html" data-nav="roadmap">What should be done</a>
+<a href="resources.html" data-nav="resources">Sources & further reading</a>
+        </div>
+        <div class="actions">
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+          </button>
+          <button id="themeToggle" aria-label="Switch theme"><svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <path d="M21 13.2A8.5 8.5 0 0 1 10.8 3a7 7 0 1 0 10.2 10.2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+</svg> Theme</button>
+          <a class="btn primary inline" href="resources.html#download" title="How to download / run">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  <path d="M12 2l8 4v6c0 5-3.4 9.4-8 10-4.6-.6-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="1.8"/>
+  <path d="M8.5 12.2l2.2 2.3 4.8-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> Run locally
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mobilepanel" id="mobilePanel" aria-label="Mobile menu">
+      <a href="index.html" data-nav="home">Home</a>
+<a href="advancements.html" data-nav="advancements">Advancements</a>
+<a href="weaknesses.html" data-nav="weaknesses">Current weaknesses</a>
+<a href="roadmap.html" data-nav="roadmap">What should be done</a>
+<a href="resources.html" data-nav="resources">Sources & further reading</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="section">
+  <div class="container">
+    <div class="card content">
+      <h1>What should the region do?</h1>
+      <p>
+        Below is a practical roadmap that a government, university project, or organization can adapt.
+        It focuses on <strong>governance</strong>, <strong>workforce</strong>, and <strong>technical controls</strong> — plus clear ways to measure progress.
+      </p>
+
+      <div class="callout">
+        <strong>Principle:</strong> protect the highest‑value services first (identity, email, finance, energy, citizen portals),
+        while raising a minimum baseline everywhere.
+      </div>
+
+      <hr class="sep" />
+
+      <h2>Phase 1 — 0 to 6 months: raise the baseline fast</h2>
+      <div class="listcards">
+        <article class="card listcard">
+          <div class="topline">
+            <h3 style="margin:0">A. Create clear cybersecurity ownership</h3>
+            <span class="tag ok">Governance</span>
+          </div>
+          <ul>
+            <li>Appoint a security lead per ministry/agency and a coordinating central function.</li>
+            <li>Define who can declare an incident, who communicates publicly, and who can approve emergency actions.</li>
+          </ul>
+        </article>
+
+        <article class="card listcard">
+          <div class="topline">
+            <h3 style="margin:0">B. Strengthen incident response coordination (CSIRT/“CERT”)</h3>
+            <span class="tag warn">Readiness</span>
+          </div>
+          <p>
+            Iraq has a national incident response function (often referenced as IQ‑CERT). The Kurdistan Region can strengthen coordination with it
+            and/or formalize a dedicated regional capability for faster local response. <a href="resources.html#s13">[S13]</a> <a href="resources.html#s8">[S8]</a>
+          </p>
+          <ul>
+            <li>Publish a single reporting channel for government incidents.</li>
+            <li>Build playbooks: phishing outbreak, ransomware, data leak, DDoS, compromised admin account.</li>
+          </ul>
+        </article>
+
+        <article class="card listcard">
+          <div class="topline">
+            <h3 style="margin:0">C. Lock down identity & email first</h3>
+            <span class="tag danger">High leverage</span>
+          </div>
+          <ul>
+            <li>Mandatory MFA for administrators and remote access; then expand MFA to all staff.</li>
+            <li>Harden email: DMARC/SPF/DKIM, phishing reporting button, and modern authentication.</li>
+            <li>Privilege review: remove unused admin accounts; “least privilege” roles.</li>
+          </ul>
+        </article>
+
+        <article class="card listcard">
+          <div class="topline">
+            <h3 style="margin:0">D. Basic hygiene program</h3>
+            <span class="tag warn">Baseline</span>
+          </div>
+          <ul>
+            <li>Asset inventory: know what exists and who owns it.</li>
+            <li>Patch cadence: internet-facing systems patched quickly; endpoints monthly at minimum.</li>
+            <li>Backups: offline/immutable backups + regular restore drills.</li>
+            <li>Central logging for critical systems + clear retention policy.</li>
+          </ul>
+        </article>
+      </div>
+
+      <hr class="sep" />
+
+      <h2>Phase 2 — 6 to 18 months: build resilience and trust</h2>
+      <div class="grid-2">
+        <div class="card content">
+          <h3 style="margin-top:0">1) Adopt a maturity framework</h3>
+          <p>Pick one common language (NIST CSF or ISO 27001) for targets, audits, and investment decisions.</p>
+          <ul>
+            <li>Define “minimum controls” for all agencies.</li>
+            <li>Define “enhanced controls” for high‑risk services (finance, energy, identity systems).</li>
+          </ul>
+        </div>
+
+        <div class="card content">
+          <h3 style="margin-top:0">2) Protect critical infrastructure</h3>
+          <p>Separate IT from OT where possible, control vendor access, and practice outage response.</p>
+          <ul>
+            <li>Network segmentation and strict remote access to industrial systems.</li>
+            <li>Tabletop exercises with energy/telecom providers and emergency teams.</li>
+          </ul>
+        </div>
+
+        <div class="card content">
+          <h3 style="margin-top:0">3) Secure procurement & vendors</h3>
+          <p>Most breaches enter through misconfigurations or third parties. Make security part of contracts.</p>
+          <ul>
+            <li>Security requirements in RFPs and renewals (MFA, logging, incident notification).</li>
+            <li>Third‑party risk reviews for major suppliers.</li>
+          </ul>
+        </div>
+
+        <div class="card content">
+          <h3 style="margin-top:0">4) Workforce development</h3>
+          <p>Build pipelines: scholarships, internships, labs, and joint programs with universities and industry.</p>
+          <ul>
+            <li>Cyber ranges / practical labs.</li>
+            <li>Clear career paths (SOC analyst → engineer → incident responder → architect).</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="sep" />
+
+      <h2>Phase 3 — 18 to 36 months: advanced capability</h2>
+      <div class="listcards">
+        <article class="card listcard">
+          <div class="topline">
+            <h3 style="margin:0">A. Continuous monitoring (SOC) and threat intelligence</h3>
+            <span class="tag ok">Capability</span>
+          </div>
+          <p>
+            Targeted campaigns described by threat research show the need for detection and response, not just prevention. <a href="resources.html#s4">[S4]</a>
+          </p>
+          <ul>
+            <li>Central SOC for government networks and critical services.</li>
+            <li>Threat intel sharing with trusted partners and regional peers.</li>
+          </ul>
+        </article>
+
+        <article class="card listcard">
+          <div class="topline">
+            <h3 style="margin:0">B. Modern, rights‑respecting cybercrime legislation</h3>
+            <span class="tag warn">Policy</span>
+          </div>
+          <ul>
+            <li>Clear definitions and proportional penalties focused on real harm (fraud, extortion, intrusion).</li>
+            <li>Judicial safeguards and transparency to maintain public trust. <a href="resources.html#s6">[S6]</a></li>
+          </ul>
+        </article>
+
+        <article class="card listcard">
+          <div class="topline">
+            <h3 style="margin:0">C. Public awareness at scale</h3>
+            <span class="tag ok">Society</span>
+          </div>
+          <ul>
+            <li>Regular campaigns on phishing and scams; easy reporting channels.</li>
+            <li>Security in schools/universities (digital literacy + basic cyber hygiene).</li>
+          </ul>
+        </article>
+      </div>
+
+      <hr class="sep" />
+
+      <h2>Metrics you can track</h2>
+      <div class="grid-3">
+        <div class="card content">
+          <h3 style="margin-top:0">Time-to-patch</h3>
+          <p>How fast are critical vulnerabilities fixed on internet-facing systems?</p>
+        </div>
+        <div class="card content">
+          <h3 style="margin-top:0">MFA coverage</h3>
+          <p>% of staff and 100% of admins protected with MFA.</p>
+        </div>
+        <div class="card content">
+          <h3 style="margin-top:0">Incident response</h3>
+          <p>Mean time to detect (MTTD) and mean time to recover (MTTR).</p>
+        </div>
+      </div>
+
+      <p style="margin-top:14px">
+        Want to cite sources? Use the <a href="resources.html">Sources & further reading</a> page for the references used in this website.
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footergrid">
+      <div>© <span id="year">2026</span> — Built as a lightweight static website (no server required).</div>
+      <div style="display:flex; gap:12px; flex-wrap:wrap">
+        <a href="resources.html">Sources</a>
+        <a href="resources.html#license">License</a>
+        <a href="#main">Back to top</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
