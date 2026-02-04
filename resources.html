@@ -1,8 +1,331 @@
-<div>
-    <h2>Sources & further reading</h2>
-    <ul>
-        <li><a href="http://example.com/source1">Source 1</a></li>
-        <li><a href="http://example.com/source2">Source 2</a></li>
-        <li><a href="http://example.com/source3">Source 3</a></li>
-    </ul>
-</div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sources and further reading for Cybersecurity in the Kurdistan Region." />
+  <title>Sources & Further Reading — Cybersecurity in the Kurdistan Region</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+</head>
+
+<body>
+  <a class="skiplink" href="#main">Skip to content</a>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container">
+      <div class="bar-inner">
+        <a class="brand" href="index.html" aria-label="Go to home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-title">Cybersecurity in the Kurdistan Region</span>
+            <span class="brand-subtitle">Importance • Progress • Gaps • Roadmap</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav-close" id="navClose" aria-label="Close menu">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <a class="navlink" href="index.html">Home</a>
+          <a class="navlink" href="advancements.html">Advancements</a>
+          <a class="navlink" href="weaknesses.html">Current weaknesses</a>
+          <a class="navlink" href="roadmap.html">What should be done</a>
+          <a class="navlink active" href="resources.html" aria-current="page">Sources</a>
+        </nav>
+
+        <div class="actions">
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <button id="themeToggle" aria-label="Switch theme">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 13.2A8.5 8.5 0 0 1 10.8 3a7 7 0 1 0 10.2 10.2z"
+                    stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+            Theme
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+  </header>
+
+  <!-- Main -->
+  <main id="main">
+    <section class="hero hero-compact">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1>Sources & Further Reading</h1>
+            <p class="lead">
+              This page lists helpful references you can cite or explore to learn more about cybersecurity,
+              digital government, critical infrastructure protection, and regional threat activity.
+            </p>
+            <div class="pill-row" aria-label="Quick links">
+              <a class="pill" href="#krg">KRG / Regional</a>
+              <a class="pill" href="#international">International standards</a>
+              <a class="pill" href="#threats">Threat landscape</a>
+              <a class="pill" href="#capacity">Capacity building</a>
+              <a class="pill" href="#license">License</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="card">
+              <h2 class="card-title">How to use these sources</h2>
+              <ul class="checklist">
+                <li>Prefer primary sources (official policies, frameworks, standards).</li>
+                <li>Use threat reports to understand targeting, tactics, and likely risks.</li>
+                <li>Combine technical controls with governance, training, and incident readiness.</li>
+              </ul>
+              <p class="muted">
+                Tip: you can add these as citations inside your pages or use them in a “References” section.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- KRG / Regional -->
+        <h2 id="krg">KRG / Kurdistan Region digital transformation</h2>
+        <div class="listcard">
+          <div class="topline">
+            <div class="title">KRG — Digital Transformation / e-Government information</div>
+            <div class="meta">Official / Government</div>
+          </div>
+          <p class="desc">
+            Overview of digital modernization efforts and services — useful background for “advancements” and
+            the importance of cybersecurity for public services.
+          </p>
+          <div class="links">
+            <a class="link" href="https://gov.krd/digitaltransformation-en/" target="_blank" rel="noopener">Open</a>
+          </div>
+        </div>
+
+        <div class="listcard">
+          <div class="topline">
+            <div class="title">KRG — Advanced Data Center / Government cloud initiatives</div>
+            <div class="meta">Official / Government</div>
+          </div>
+          <p class="desc">
+            Infrastructure modernization is a major driver of cybersecurity needs: identity, access control,
+            monitoring, incident response, and resilience become critical when services centralize.
+          </p>
+          <div class="links">
+            <a class="link" href="https://gov.krd/advanced-data-center-en/" target="_blank" rel="noopener">Open</a>
+          </div>
+        </div>
+
+        <hr class="sep" />
+
+        <!-- International -->
+        <h2 id="international">International standards and frameworks</h2>
+
+        <div class="grid grid-2">
+          <div class="listcard">
+            <div class="topline">
+              <div class="title">NIST Cybersecurity Framework (CSF)</div>
+              <div class="meta">Framework</div>
+            </div>
+            <p class="desc">
+              A widely used framework to organize cyber risk management using functions like
+              Identify, Protect, Detect, Respond, Recover.
+            </p>
+            <div class="links">
+              <a class="link" href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener">Open</a>
+            </div>
+          </div>
+
+          <div class="listcard">
+            <div class="topline">
+              <div class="title">ISO/IEC 27001 (Information Security Management)</div>
+              <div class="meta">Standard</div>
+            </div>
+            <p class="desc">
+              The global standard for building an Information Security Management System (ISMS).
+              Useful for government agencies, banks, telecoms, universities, and major enterprises.
+            </p>
+            <div class="links">
+              <a class="link" href="https://www.iso.org/isoiec-27001-information-security.html" target="_blank" rel="noopener">Open</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="listcard">
+            <div class="topline">
+              <div class="title">CIS Critical Security Controls</div>
+              <div class="meta">Best practices</div>
+            </div>
+            <p class="desc">
+              Practical control set for reducing common attacks: asset inventory, secure configuration,
+              vulnerability management, logging, backups, and more.
+            </p>
+            <div class="links">
+              <a class="link" href="https://www.cisecurity.org/controls" target="_blank" rel="noopener">Open</a>
+            </div>
+          </div>
+
+          <div class="listcard">
+            <div class="topline">
+              <div class="title">ENISA — Guidance, reports, and good practice</div>
+              <div class="meta">Research / Guidance</div>
+            </div>
+            <p class="desc">
+              Strong public resources on incident response, resilience, threats, and cyber governance.
+            </p>
+            <div class="links">
+              <a class="link" href="https://www.enisa.europa.eu/" target="_blank" rel="noopener">Open</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="sep" />
+
+        <!-- Threats -->
+        <h2 id="threats">Threat landscape and targeting research</h2>
+
+        <div class="listcard">
+          <div class="topline">
+            <div class="title">Recorded Future — KRG targeting research (examples)</div>
+            <div class="meta">Threat intelligence</div>
+          </div>
+          <p class="desc">
+            Threat research can help explain why the region is targeted and what tactics are common.
+            Use these for contextual risk discussion (phishing, credential theft, malware, espionage).
+          </p>
+          <div class="links">
+            <a class="link" href="https://www.recordedfuture.com/" target="_blank" rel="noopener">Open</a>
+          </div>
+        </div>
+
+        <div class="listcard">
+          <div class="topline">
+            <div class="title">MITRE ATT&CK (Tactics & Techniques)</div>
+            <div class="meta">Knowledge base</div>
+          </div>
+          <p class="desc">
+            A globally used, public knowledge base of adversary tactics and techniques. Useful for
+            mapping likely attacks to real defensive controls and training scenarios.
+          </p>
+          <div class="links">
+            <a class="link" href="https://attack.mitre.org/" target="_blank" rel="noopener">Open</a>
+          </div>
+        </div>
+
+        <hr class="sep" />
+
+        <!-- Capacity -->
+        <h2 id="capacity">Capacity building and incident readiness</h2>
+
+        <div class="grid grid-2">
+          <div class="listcard">
+            <div class="topline">
+              <div class="title">FIRST — Incident Response (CSIRT) community</div>
+              <div class="meta">Community / Practice</div>
+            </div>
+            <p class="desc">
+              Guidance and community standards for incident response teams. Helpful if the region
+              strengthens SOC/CSIRT cooperation across sectors.
+            </p>
+            <div class="links">
+              <a class="link" href="https://www.first.org/" target="_blank" rel="noopener">Open</a>
+            </div>
+          </div>
+
+          <div class="listcard">
+            <div class="topline">
+              <div class="title">CISA — Cyber guidance and alerts</div>
+              <div class="meta">Public guidance</div>
+            </div>
+            <p class="desc">
+              Practical advisories, known exploited vulnerabilities, and defensive guidance that can be
+              adapted into local policies and patching programs.
+            </p>
+            <div class="links">
+              <a class="link" href="https://www.cisa.gov/" target="_blank" rel="noopener">Open</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="listcard">
+          <div class="topline">
+            <div class="title">OWASP Top 10 (Web application security)</div>
+            <div class="meta">Secure development</div>
+          </div>
+          <p class="desc">
+            A standard reference for common web security risks (injection, broken access control, etc.).
+            Useful for universities, developers, government portals, and local software companies.
+          </p>
+          <div class="links">
+            <a class="link" href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener">Open</a>
+          </div>
+        </div>
+
+        <hr class="sep" />
+
+        <!-- License -->
+        <h2 id="license">License</h2>
+        <p>
+          <strong>Site code:</strong> MIT License (you can modify and reuse freely).
+          <strong>Text content:</strong> You can treat it as your own project content.
+          External sources linked above keep their own copyrights.
+        </p>
+
+        <div class="callout">
+          <strong>Want Kurdish versions?</strong>
+          If you paste your current <code>index.html</code> here, I can produce matched translations for
+          <em>Kurmanji</em>, <em>Badini</em>, and <em>Sorani</em> for all pages so your language switch works perfectly.
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">Cybersecurity in the Kurdistan Region</div>
+          <p class="footer-text">
+            A public awareness and policy-focused website about cybersecurity importance, progress, gaps, and priorities.
+          </p>
+        </div>
+        <div class="footer-links" aria-label="Footer links">
+          <a href="index.html">Home</a>
+          <a href="advancements.html">Advancements</a>
+          <a href="weaknesses.html">Weaknesses</a>
+          <a href="roadmap.html">Roadmap</a>
+          <a href="resources.html" aria-current="page">Sources</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> • Built for awareness and education</span>
+        <span class="dot">•</span>
+        <a href="#main">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
